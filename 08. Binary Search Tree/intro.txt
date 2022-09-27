@@ -1,0 +1,6 @@
+Binary Search : used to find element in array. 
+              : time complexity - O(logN)
+
+Binary Search tree : 
+A tree having in left subtree is less than the root ans having right subtreee data is greater than root.
+Inorder of BST is sorted.

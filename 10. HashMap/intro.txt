@@ -1,0 +1,20 @@
+HashMaps is a Data structure.
+Stored value in Key-value fromat. 
+Time complexity - 
+Insertion : O(1)
+Deletion  : O(1)
+Searching : O(1)
+
+InBuilt Staff-
+- Map              O(logN)     (TreesMap)
+- Unordered Map    O(1)        (HashMap , LinkedHashMap)
+
+
+
+
+Bucket Array - 
+Simply a array in which element is stored.
+
+Hash Function -  combination of two things.
+1. Hash Code                // make int of any string ex-"babbar"
+2. Compression function     // compress the int into a range of array size

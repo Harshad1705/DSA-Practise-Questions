@@ -1,0 +1,36 @@
+Heap is a complete binary tree that comes with a Heap order property.
+
+complete binary tree :  every level is completely filled except last level.
+                     : nodes always added from the left or lean towards the left.
+
+Heap order property - minOrder property & maxOrder Property
+
+two types of Heap : 
+   Max Heap        Min Heap
+     50               10
+    /  \             /  \
+   30  40           20   30
+  /  \             /  \
+ 10   20          40   50 
+
+
+In 1 based indexing - 
+
+Node         = I th  index
+left child   = 2*I th   index
+right child  = 2*I + 1 th   index
+
+parent = I/2 th index
+
+complete binary tree - leaf index = (n/2 + 1 ) to n
+
+
+In 0 based indexing - 
+
+Node         = I th  index
+left child   = 2*I + 1 th   index
+right child  = 2*I + 2 th   index
+
+parent = I/2 - 1 th index
+
+complete binary tree - leaf index = n/2 to n -1

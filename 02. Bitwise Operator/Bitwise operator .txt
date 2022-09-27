@@ -1,0 +1,140 @@
+Bitwise Operator
+----------------
+
+AND    &
+OR     |
+NOT    ~
+XOR    ^
+
+
+AND  -
+
+Table
+0 0    0
+0 1    0
+1 0    0
+1 1    1
+
+Example 
+5 & 7
+
+1 0 1
+1 1 1
+------
+1 0 1   = 5
+
+OR - 
+
+Table
+0 0   0
+1 0   1
+0 1   1
+1 1   1
+
+Example 
+2 | 4
+
+  1 0
+1 0 0
+----
+1 1 0  = 6
+
+NOT -
+
+Table
+
+1   0
+0   1
+
+Example
+~2
+
+(4 bytew =  32 bis)
+000......0010
+----
+111.....1101
+
+first bit means negative value
+
+111....1101 1's complement  0000....0010
+                           +           1
+				-----------------
+				    00000.....0011
+				=  -3
+
+XOR -
+
+Table
+0 0   0
+1 0   1
+0 1   1
+1 1   0
+
+Example 
+2 ^ 4
+
+  1 0
+1 0 0
+------
+1 1 0  = 6
+
+
++++++++++++++++++++++++++++++++++++++++++++
+
+Left Shift Operator : <<
+-------------------
+
+5 << 1
+  000..00101
+= 000..01010 = 10     5 * 2 = 10
+
+6 << 2
+  000..0001010
+= 000..0101000 = 24   6 * 2 * 2 = 24 
+
+Right Shift Operator : >>
+--------------
+
+5 >> 1
+ 000..00101
+=000..00010 = 2    5/2 = 2
+
+5 >> 2
+ 000..000101
+=000..000001 = 1   5/2*2 = 1
+
+
+<< , >>    +ve number   padding is 0
+<< , >>    -ve number   padding is compiler dependent   "Hume nhi pata"
+
+++++++++++++++++++++++++++++++++++++++++++++
+
+Post Increment
+
+i++
+
+Example
+int i = 4 ;            int i = 3 , a = 2;
+int a = i++ ;          int sum = a + (i++);
+ 
+a = 4 , i = 5          sum = 2 +  3 = 5 , i = 4
+
+Pre Increment
+
+++i 
+
+Example
+int i = 12;             int a = 2 , i = 3;
+int a = ++i ;           int sum = a + (++i) ;
+
+a = 12 , i = 13         sum = 6 , i = 4 
+
+
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Operator Precedence
+
+yeh yad karne ki koi jarurat nhi 
+BSS
+Bracket ka use karna hai

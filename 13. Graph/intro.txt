@@ -1,0 +1,103 @@
+⭕ Graph is a type of data structure build with combination of nodes and edegs. 
+
+u -- v - \
+|    |    p 
+r -- q - /
+
+Node - entity to store data
+Edge - used to connect nodes
+
+⭕ Type of graph : 
+
+1. Directed graph
+u --> v 
+^     ^    
+r --> q 
+
+2. Undirected graph
+u -- v - \
+|    |    p 
+r -- q - /
+
+UnDirected Graph : 
+Degree - number of edges connected with particular entity
+Degree(u) = 2
+
+Directed Graph : 
+InDegree - edges coming towards nodes
+OutDegree - edges going through nodes
+
+InDegree(v) = 2
+OutDegree(v) = 0
+
+
+⭕ Weighted Graph :
+weight associated with each edges
+     2
+  u --> v                         
+ 1 ^     ^ 5     Weighted Directed graph 
+  r --> q 
+     7
+
+      1    1
+    u -- v - \
+ 1  |    |    p        Weighted UnDirected graph
+    r -- q - /  1
+    1
+
+⭕ Path :
+
+u -- v - \
+|    |    p 
+r -- q - /
+
+u-v-q         : is a Path
+v-p-q-r       : is a Path
+u-v-q-r-u     : is not a path
+ 
+
+⭕ Cyclic Graph :
+
+       7
+    a ⬅️ d
+   2⬇️  ⬆️ 4  :  a-b-c-d-a   -- Weighted cyclic directed grapg
+    b ➡️ c
+       1
+
+
+⭕ ACyclic Graph :
+
+       7
+    a ➡️d
+  2⬇️  ⬆️ 4  :  a-b-c-d   -- Weighted Acyclic directed grapg
+    b ➡️ c
+       1
+
+⭕ Graph representation :
+
+1. Adjancency matrix
+2. Adjancency list
+
+Input : number of node (n)
+      : number of edegs (m)
+ex - n=3 , m=3 
+    0➡️1 , 1➡️2 , 2➡️0
+
+Adjancency matrix --  
+Space complexity - O(n^2)
+
+        0   1   2
+
+ 0      0   1   0
+ 1      0   0   1
+ 2      1   0   0
+
+Adjancency list --
+
+0 : {1}
+1 : {2}
+2 : {0}
+
+
+
+

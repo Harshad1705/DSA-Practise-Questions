@@ -1,0 +1,60 @@
+why Trie -
+if we have a problem statement  - that we have to implement a dictionary 
+
+operation--
+addition
+searching
+remove
+
+by using hash map - all the complexity willl be O(1)
+but it is average case 
+
+in worst case complexity will be - O(length)    -precisely
+
+
+Insertion - algorithm
+charatcter - search - if found - toh aage bad ajayega 
+                    - if not found - create node - aage bad jayega
+aisa chalte rahega jab tak string puri traverse na ho jaye
+
+
+TrieNode{
+    char data;
+    TrieNode children[26];
+    bool isTerminal;           // it is used to handle the anomoly while searching - means 
+}
+
+       Root
+   /    |    \
+A       D       T
+R       O       I
+M               M
+                E
+search - 
+Here we insert three word - arm ,do , time
+
+if we search arm - then it found
+if we search time - it found
+but , if we found tim - then it also found , we did't insert but it found
+in this case we check if the last char is terminal node or not , that why we use bool isTerminal in Node.
+
+
+HashMap vs Trie
+
+ex - ARM , ARE , ARENA , ARDINO
+
+all word take spaces to store in hashmap
+<ARM ,true> , <ARE ,true> , <ARENA ,true> , <ARDINO ,true>
+
+But in Trie   - it utilize space optimally  in insertion and in searching
+            A
+            |
+            R
+         /  |  \
+        E   M   D
+        |       |
+        N       I
+        |       |
+        A       N
+                |
+                O

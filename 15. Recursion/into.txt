@@ -1,0 +1,8 @@
+when a function calls directly or indirectly to itself is called Recursion.
+
+It is used when solution of complex problem depends on the solution of same type of small problem.
+
+If we don't write base case : then error is : "SEGMENTATION FAULT".
+
+Tail Recursion : where recursion performed after preocessing.
+Head recursion : where recursion performed before processing.

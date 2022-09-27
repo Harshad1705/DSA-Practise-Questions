@@ -1,0 +1,6 @@
+Linear data structure
+LIFO = Last in First Out
+
+push = O(1)
+pop = O(1)
+peek = O(1)

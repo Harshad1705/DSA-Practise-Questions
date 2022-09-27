@@ -1,0 +1,25 @@
+What ?
+
+Linked List is a Linear data structure.
+It is a collection of nodes.
+Node is collection of data and pointer.
+
+Why ?
+
+arr[10] - now unable to change size of arr at runtime
+vec<int> v(5); - now to increase size vector double itself and copy all values
+            but it is not optimal because it takes extra space to copy values.
+
+That's why we use Linked List
+Linked List - Dtnamic data structure
+            - grow and shrink at runtime ( no memory wastage )
+
+        Linked List vs Array/vector
+Insertion    O(1)         O(n)
+Searching    O(n)         O(1)
+
+Types of Linked List
+- Singly LL
+- Doubly LL
+- Circular LL
+- Circular Doubly LL
